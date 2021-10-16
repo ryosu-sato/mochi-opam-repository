@@ -14,7 +14,11 @@ build: [
 install: [
   [make "install"]
 ]
+remove: [
+  [ocamlfind "remove" "fpat"]
+]
 depends: [
+  "ocamlfind"
   "num"
   "batteries"
   "zarith"
